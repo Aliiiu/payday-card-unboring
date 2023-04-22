@@ -1,0 +1,94 @@
+.home {}
+
+.home__wrapper {}
+
+.home__download {
+  height: 4.34rem;
+  padding-top: 4.331rem;
+  padding-right: 12.7rem;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.24rem;
+  position: absolute;
+
+  svg {
+    height: 4.338rem;
+    width: 13.48rem;
+    border-radius: 0.775rem;
+    display: block;
+  }
+}
+
+.home__hero {
+  padding-top: 7.847rem;
+  padding-right: 9.535rem;
+
+  .home__download {
+    justify-content: flex-start;
+    left: 0;
+    margin-left: 10.9rem;
+    padding-top: unset;
+    gap: 1.6rem;
+
+
+    svg {
+      height: 5.6rem;
+      width: 17.4rem;
+      border-radius: 1rem;
+      display: block;
+    }
+  }
+}
+
+.home__hero__cards {
+  position: relative;
+  left: 77.7rem;
+  width: 100%;
+}
+
+.home__hero__cards svg {
+  position: absolute;
+  display: block;
+
+  &:nth-of-type(1) {
+    width: calc(75rem * 0.835);
+    height: calc(78rem * 0.835);
+  }
+
+  &:nth-of-type(2) {
+    top: 0.3rem;
+    transform: translateX(-1.325rem);
+    width: calc(78rem * 0.835);
+    height: calc(78rem * 0.835);
+  }
+
+  &:nth-of-type(3) {
+    top: 5.4rem;
+    transform: translateX(-5.575rem);
+    width: calc(81rem * 0.835);
+    height: calc(72rem * 0.835);
+  }
+}
+
+.home__hero__heading {
+  width: 72.359rem;
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6.94439rem;
+  line-height: 98.5%;
+  /* or 68px */
+  margin-top: 43.053rem;
+  margin-bottom: 3.2rem;
+  margin-left: 10.9rem;
+
+  letter-spacing: -0.015em;
+
+  color: #141414;
+
+  span {
+    font-weight: 500;
+    margin-left: 0.5ch;
+  }
+}

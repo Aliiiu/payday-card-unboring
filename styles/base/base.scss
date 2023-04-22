@@ -1,6 +1,6 @@
 html {
   // overflow: hidden;
-  font-size: calc(100vw / 1440 * 10);
+  font-size: calc(100vw / 1512 * 10);
 
   @include media("<phone") {
     font-size: calc(100vw / 360 * 10);
@@ -14,6 +14,7 @@ body {
   user-select: none;
   -webkit-user-drag: none;
   // overflow: hidden;
+  contain: paint;
 }
 
 * {
@@ -51,6 +52,7 @@ canvas {
   pointer-events: none;
   z-index: 4;
   transition: opacity 1s $ease-out-expo;
+  display: none !important;
 
   @include media("<phone") {
     z-index: 3;
@@ -59,4 +61,8 @@ canvas {
 
 [data-reveal] {
   opacity: 0;
+}
+
+section {
+  height: calc(calc(100vh + 102.8rem) / 2)
 }
