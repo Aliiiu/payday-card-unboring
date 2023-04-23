@@ -1,0 +1,56 @@
+.home__lock {
+  padding-top: calc(10vh + 10rem);
+  position: relative;
+}
+
+.home__lock__heading {
+  width: 50.1rem;
+  margin-left: 21.7rem;
+  // top: 1206px;
+
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 7.05534rem;
+  line-height: 98.5%;
+  /* or 69px */
+
+  letter-spacing: -0.015em;
+
+  color: #141414;
+}
+
+.home__lock__body {
+  width: 46.5rem;
+  margin-left: 21.7rem;
+  margin-top: 2.8rem;
+
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 98.5%;
+  /* or 25px */
+
+  letter-spacing: -0.015em;
+
+  color: #141414;
+}
+
+.home__lock__illustration {
+  position: absolute;
+  top: calc(5.35vh + 5.35rem);
+  left: 87.4rem;
+  height: 59rem;
+  width: 42.257rem;
+}
+
+.home__lock__illustration svg {
+  position: absolute;
+
+  bottom: 0;
+
+  height: 59rem;
+  width: 42.257rem;
+  border-radius: 2.928rem
+}
