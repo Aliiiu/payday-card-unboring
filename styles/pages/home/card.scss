@@ -1,0 +1,80 @@
+.home__card {
+  section {
+    padding-top: calc(5.65vh + 5.65rem);
+    position: relative;
+  }
+
+  .home__download {
+    justify-content: center;
+    left: 0;
+    padding: unset;
+    gap: 3rem;
+    bottom: calc(5.5vh + 5.5rem);
+    position: absolute;
+  }
+}
+
+.home__card__master {
+  background: #090909;
+  color: #ffffff;
+}
+
+.home__card__goody {
+  background: #B182E0;
+  color: #ffffff;
+}
+
+.home__card__aj {
+  background: #E8E8E8;
+  color: #000000;
+}
+
+
+.home__card__body {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 98.5%;
+  /* or 34px */
+
+  letter-spacing: -0.015em;
+
+  color: inherit;
+  text-align: center;
+}
+
+.home__card__heading {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22.9428rem;
+  line-height: 98.5%;
+  /* identical to box height, or 226px */
+
+  text-align: center;
+  letter-spacing: -0.015em;
+
+  color: #FFFFFF;
+  margin-top: 21.1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.home__card__illustration {
+  position: absolute;
+  top: calc(9.7vh + 9.7rem);
+  left: 56.3rem;
+  height: 59rem;
+  width: 42.257rem;
+}
+
+.home__card__illustration svg {
+  position: absolute;
+
+  bottom: 0;
+
+  height: 59rem;
+  width: 42.257rem;
+  border-radius: 2.928rem
+}
