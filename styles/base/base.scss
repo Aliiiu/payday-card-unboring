@@ -3,7 +3,7 @@ html {
   font-size: calc(100vw / 1512 * 10);
 
   @include media("<phone") {
-    font-size: calc(100vw / 360 * 10);
+    font-size: calc(100vw / 390 * 10);
   }
 }
 
@@ -69,5 +69,5 @@ section {
 }
 
 svg{
-  pointer-events: none;
+  // pointer-events: none;
 }
