@@ -21,15 +21,15 @@
 }
 
 .home__hero {
-  padding-top: 7.847rem;
-  padding-right: 9.535rem;
+  height: calc(61.1vh + 61.1rem);
 
   .home__download {
-    justify-content: flex-start;
+    justify-content: center;
     left: 0;
-    margin-left: 10.9rem;
     padding-top: unset;
     gap: 1.6rem;
+    padding-right: unset;
+    margin: calc(1.9vh + 1.9rem) 0;
 
 
     svg {
@@ -41,10 +41,57 @@
   }
 }
 
+.home__hero__nav {
+  padding-top: calc(4.048vh + 4.048rem - 1.25vh - 1.25rem);
+  display: flex;
+  margin: 0 10.9rem;
+  justify-content: space-between;
+  align-items: center;
+
+  >svg {
+    height: 4.2rem;
+    width: 16.3rem;
+    left: 109px;
+    display: block;
+  }
+}
+
+.home__hero__navDrop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7.4rem;
+  width: 30.1rem;
+  gap: 0.65rem;
+  border-radius: 8.7rem;
+  background: #F5F5F5;
+
+  svg {
+    height: 2.4rem;
+    width: 2.4rem;
+    display: block;
+    margin-top: 1rem;
+  }
+}
+
+.home__hero__navText {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 98.5%;
+  /* identical to box height, or 24px */
+
+  letter-spacing: -0.015em;
+
+  color: #1D1D1D;
+}
+
 .home__hero__cards {
-  position: relative;
-  left: 77.7rem;
+  position: absolute;
+  left: 0;
   width: 100%;
+  top: calc(1vh + 1rem);
 }
 
 .home__hero__cards svg {
@@ -52,23 +99,78 @@
   display: block;
 
   &:nth-of-type(1) {
-    width: calc(75rem * 0.835);
-    height: calc(78rem * 0.835);
+    width: calc(102.425rem * 0.85);
+    height: calc(78rem * 0.835 * 0.85);
+    left: -26.1rem;
+    top: calc(10.5vh + 10.5rem);
   }
 
   &:nth-of-type(2) {
-    top: calc(0.15vh + 0.15rem);
-    transform: translateX(-1.325rem);
-    width: calc(78rem * 0.835);
-    height: calc(78rem * 0.835);
+    top: calc(4.5vh + 4.5rem);
+    width: 99.3605rem;
+    height: 60.3605rem;
+    right: -36.965rem;
   }
 
   &:nth-of-type(3) {
     top: calc(2.7vh + 2.7rem);
-    transform: translateX(-5.575rem);
-    width: calc(81rem * 0.835);
+    width: 67.635rem;
     height: calc(72rem * 0.835);
+    left: 72.5rem;
+    top: calc(29.5vh + 29.5rem);
   }
+}
+
+.home__text {
+  margin: calc(5.45vh + 5.45rem) auto 0;
+  display: grid;
+  justify-content: center;
+}
+
+.home__text__pre {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 98.5%;
+  text-align: center;
+  /* identical to box height, or 24px */
+
+
+  color: #141414;
+  padding-right: 6.85rem;
+  margin-bottom: -0.1rem;
+}
+
+.home__text__heading {
+  font-family: 'Nohemi';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12.1062rem;
+  line-height: 95.5%;
+  /* or 116px */
+
+  text-align: center;
+  letter-spacing: -0.01em;
+
+  color: #141414;
+  width: 80.5rem;
+}
+
+.home__text__body {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.27421rem;
+  line-height: 98.5%;
+  /* or 22px */
+
+  text-align: center;
+  letter-spacing: -0.015em;
+
+  color: #141414;
+  width: 45.2rem;
+  margin: 0.9rem auto;
 }
 
 .home__hero__heading {

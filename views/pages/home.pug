@@ -6,24 +6,38 @@ block variables
 block content 
   main.home
     .home__wrapper 
+    section.home__hero
+      .home__hero__nav  
+        include ../partials/logo
+        .home__hero__navDrop
+          p.home__hero__navText Download Payday
+          .home__hero__navIcon 
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.9998 14.975C11.8665 14.975 11.7371 14.95 11.6118 14.9C11.4865 14.85 11.3825 14.7833 11.2998 14.7L6.6998 10.1C6.51647 9.91665 6.4248 9.68332 6.4248 9.39999C6.4248 9.11665 6.51647 8.88332 6.6998 8.69999C6.88314 8.51665 7.11647 8.42499 7.3998 8.42499C7.68314 8.42499 7.91647 8.51665 8.0998 8.69999L11.9998 12.6L15.8998 8.69999C16.0831 8.51665 16.3165 8.42499 16.5998 8.42499C16.8831 8.42499 17.1165 8.51665 17.2998 8.69999C17.4831 8.88332 17.5748 9.11665 17.5748 9.39999C17.5748 9.68332 17.4831 9.91665 17.2998 10.1L12.6998 14.7C12.5998 14.8 12.4915 14.871 12.3748 14.913C12.2581 14.955 12.1331 14.9757 11.9998 14.975Z" fill="#1D1D1D"/>
+            </svg>
+      .home__hero__cards
+        <svg width="403" height="575" viewBox="0 0 403 575" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <rect x="-83.8203" y="-11" width="595.213" height="322.706" rx="29.2826" transform="rotate(33.3014 -83.8203 -11)" fill="#000000"/>
+        </svg>
+        <svg width="279" height="611" viewBox="0 0 279 611" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="200.174" y="-12" width="595.213" height="322.706" rx="29.2826" transform="rotate(41.1083 200.174 -12)" fill="#3ABB5E"/>
+        </svg>
+        <svg width="651" height="474" viewBox="0 0 651 474" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="-7" y="172.859" width="595.213" height="322.706" rx="29.2826" transform="rotate(-17.5883 -7 172.859)" fill="#442BDF"/>
+        </svg>
+      .home__text 
+        p.home__text__pre introducing
+        h1.home__text__heading Payday Virtual Cards.
+        p.home__text__body because making money is no easy feat, so why make spending it a defeat?
+
       .home__download 
         include ../partials/store
 
-    section.home__hero 
-      .home__hero__cards
-        <svg width="607" height="641" viewBox="0 0 607 641" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="236.041" y="-11.5331" width="595.213" height="322.706" rx="29.2826" transform="rotate(50.071 236.041 -11.5331)" fill="#FF9E00"/>
-        </svg>
-        <svg width="637" height="611" viewBox="0 0 637 611" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="200.174" y="-12" width="595.213" height="322.706" rx="29.2826" transform="rotate(41.1083 200.174 -12)" fill="#FF0115"/>
-        </svg>
-        <svg width="653" height="575" viewBox="0 0 653 575" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="166.18" y="-11" width="595.213" height="322.706" rx="29.2826" transform="rotate(33.3014 166.18 -11)" fill="#000000"/>
-        </svg>
-      h2.home__hero__heading Making money is no easy feat,
-        span so why make spending it a defeat?
-      .home__download 
-        include ../partials/store
+
+    //- h2.home__hero__heading Making money is no easy feat,
+    //-   span so why make spending it a defeat?
+    //- .home__download 
+    //-   include ../partials/store
 
     section.home__mall
       h2.home__mall__heading Make the world your mall.
@@ -43,7 +57,7 @@ block content
       .home__lock__illustration
         include ../partials/lock
 
-    div.home__card
+    .home__card
       section.home__card__master
         p.home__card__body Our Cards
         h1.home__card__heading MasterCard
@@ -68,19 +82,18 @@ block content
         .home__download 
           include ../partials/store
 
-    div.home__footer
+    .home__footer
       h2.home__footer__heading Borderless payments, so you bother less.
       .home__download 
         include ../partials/store
       figure.home__footer__mockup
-        img(src="images/mockup.png", alt="")
+        img(src="images/mockup.png" alt="")
       .home__footer__foot 
         h3.home__footer__text Made w ❤️ for PayDay.
         p.home__footer__body (c) 2023 AJ X Goody. All Rights Reserved, all Wrongs Reversed.
         h3.home__footer__text Share on Twitter
         h3.home__footer__text &nearr;
 
-      
 
 
 
@@ -91,6 +104,7 @@ block content
 
 
 
-       
+
+
 
 

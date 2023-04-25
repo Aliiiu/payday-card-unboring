@@ -15,6 +15,7 @@ body {
   -webkit-user-drag: none;
   // overflow: hidden;
   contain: paint;
+  background: #FFFFFF;
 }
 
 * {
@@ -65,4 +66,8 @@ canvas {
 
 section {
   height: calc(calc(100vh + 102.8rem) / 2)
+}
+
+svg{
+  pointer-events: none;
 }

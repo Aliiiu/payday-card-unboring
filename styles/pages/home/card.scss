@@ -1,7 +1,8 @@
 .home__card {
   section {
     padding-top: calc(5.65vh + 5.65rem);
-    position: relative;
+    position: absolute;
+    width: 100%;
   }
 
   .home__download {
