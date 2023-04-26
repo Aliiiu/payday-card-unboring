@@ -65,9 +65,13 @@ canvas {
 }
 
 section {
-  height: calc(calc(100vh + 102.8rem) / 2)
+  height: calc(calc(100vh + 102.8rem) / 2);
+
+  @include media("<phone") {
+    height: calc(calc(84.4rem + 100vh * 1.2));
+  }
 }
 
-svg{
+svg {
   // pointer-events: none;
 }
