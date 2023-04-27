@@ -1,6 +1,10 @@
 .home__mall {
   padding-top: calc(7vh + 7rem);
   position: relative;
+
+  @include media("<phone") {
+    padding-top: calc(4.45rem + 4.45vh * 1.2);
+  }
 }
 
 .home__mall__heading {
@@ -18,6 +22,13 @@
   letter-spacing: -0.015em;
 
   color: #141414;
+
+  @include media("<phone") {
+    width: 28.7rem;
+    font-size: 4.5rem;
+    margin-left: 4.2rem;
+    margin-top: calc(17.3rem + 17.3vh * 1.2);
+  }
 }
 
 .home__mall__body {
@@ -35,6 +46,13 @@
   letter-spacing: -0.015em;
 
   color: #141414;
+
+  @include media("<phone") {
+    width: 26.2rem;
+    font-size: 1.6rem;
+    margin-left: 4.2rem;
+    margin-top: 2.1rem
+  }
 }
 
 .home__mall__illustration {
@@ -42,6 +60,12 @@
   top: calc(10vh + 9.4rem);
   left: 98.421rem;
   width: 100%;
+
+  @include media("<phone") {
+    left: 2.25rem;
+    transform: scale(0.525);
+    top: calc(4.45rem + 4.45vh * 1.2);
+  }
 }
 
 .home__mall__illustration svg {
