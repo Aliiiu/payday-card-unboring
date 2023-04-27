@@ -69,7 +69,7 @@ section {
 
   @include media("<phone") {
     height: 82.5vh;
-    height: 82.5dvh;
+    //height: 82.5dvh;
   }
 }
 
