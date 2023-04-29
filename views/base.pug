@@ -1,11 +1,11 @@
 block variables 
-- const title = ""
-- const description = ""
-- const image = ""
+- const title = "Payday Cards | Unboring"
+- const description = "One super-card for every need."
+- const image = "https://payday-card-unboring.vercel.app/paydayThumb.png"
 - const site = ""
-- const maskIconColor = ""
-- const TileColor = ""
-- const themeColor = ""
+- const maskIconColor = "#5bbad5"
+- const TileColor = "#2b5797"
+- const themeColor = "#ffffff"
 
 
 doctype html
@@ -33,15 +33,15 @@ html(lang="en")
     meta(property="og:description" content=description)
     meta(property="og:image" content=image ? image : "")
 
-    meta(property="twitter:card" content="summary_large_image")
-    meta(property="twitter:title" content=title)
-    meta(property="twitter:description" content=description)
-    meta(property="twitter:image" content=image ? image : "")
-    meta(property="twitter:site" content=site ? site : "")
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ourpaydayHQ">
+    <meta name="twitter:title" content="Payday Cards | Unboring">
+    <meta name="twitter:description" content="One super-card for every need.">
+    <meta name="twitter:image" content="https://payday-card-unboring.vercel.app/paydayThumb.png">
 
     //- link(href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet")
     link(href="/type.css" rel="stylesheet")
-                
+
 
   body
     style
@@ -49,8 +49,7 @@ html(lang="en")
 
     //- include ./partials/preloader
     //- include ./partials/header
-
-    .content#content(data-template=template)
+    .content#smooth-wrapper(data-template=template)
       block content
 
       if template === "home"
