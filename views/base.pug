@@ -1,11 +1,11 @@
 block variables 
-- const title = ""
-- const description = ""
-- const image = ""
+- const title = "Payday Cards | Unboring"
+- const description = "One super-card for every need."
+- const image = "paydayThumb.png"
 - const site = ""
-- const maskIconColor = ""
-- const TileColor = ""
-- const themeColor = ""
+- const maskIconColor = "#5bbad5"
+- const TileColor = "#2b5797"
+- const themeColor = "#ffffff"
 
 
 doctype html
@@ -34,6 +34,7 @@ html(lang="en")
     meta(property="og:image" content=image ? image : "")
 
     meta(property="twitter:card" content="summary_large_image")
+    meta(content="summary_large_image" name="twitter:card")
     meta(property="twitter:title" content=title)
     meta(property="twitter:description" content=description)
     meta(property="twitter:image" content=image ? image : "")
@@ -41,7 +42,7 @@ html(lang="en")
 
     //- link(href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet")
     link(href="/type.css" rel="stylesheet")
-                
+
 
   body
     style
@@ -49,8 +50,7 @@ html(lang="en")
 
     //- include ./partials/preloader
     //- include ./partials/header
-
-    .content#content(data-template=template)
+    .content#smooth-wrapper(data-template=template)
       block content
 
       if template === "home"
