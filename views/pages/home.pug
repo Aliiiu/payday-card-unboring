@@ -2,6 +2,10 @@ extends ../base.pug
 
 block variables
   - var template = "home"
+  - var message = `check out this website for @ourpaydayHQ by \n \n @theajanwachukwu et  @goody__boy \n \n https://payday-card-unboring.vercel.app/?foo=bar123`
+  - var tweet = encodeURI(message)
+  - var hashtags = "#unboring"
+  - var tweetHref = `http://twitter.com/intent/tweet?text=${tweet}&hashtags=${hashtags}`
 
 block content 
   main.home#smooth-content
@@ -86,7 +90,7 @@ block content
       .home__footer__foot 
         h3.home__footer__text Made w ❤️ for PayDay.
         p.home__footer__body (c) 2023 AJ X Goody. All Rights Reserved, all Wrongs Reversed.
-        h3.home__footer__text Share on Twitter
+        a.home__footer__text(href=tweetHref target='_blank' rel='noreferrer noopener') Share on Twitter
         h3.home__footer__text &nearr;
 
     .card__wrapper
