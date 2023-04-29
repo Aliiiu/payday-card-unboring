@@ -55,6 +55,31 @@ html(lang="en")
 
       if template === "home"
         //- include ./partials/footer
+    .home__card
+      section.home__card__master
+        //- p.home__card__body Get a virtual card, tailored to your needs.
+        .home__card__headings
+          h1.home__card__heading MasterCard
+          h1.home__card__heading Goody Card
+          h1.home__card__heading the AJ Card
+
+        .home__card__illustration
+          include partials/lock
+        .home__download 
+          include partials/store
+
+
+      section.home__card__goody
+        //- p.home__card__body Get a virtual card, tailored to your needs.
+        .home__card__illustration
+
+      section.home__card__aj
+        //- p.home__card__body Get a virtual card, tailored to your needs.
+        .home__card__illustration
+    .card__wrapper
+      figure#card   
+        img(src="images/black.svg" alt="")
+
     script.
       window.preloadables = !{JSON.stringify(preloadables).replace(/<\//g, "<\\/")}
     script(src="main.js") 
