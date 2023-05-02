@@ -56,21 +56,25 @@ html(lang="en")
       if template === "home"
         //- include ./partials/footer
     .home__card
-      section.home__card__master
+      section.home__card__variants 
+        img(src="images/master__back.png" alt="")
+        img(src="images/visa__back.png" alt="")
+        img(src="images/verve__back.png" alt="")
+
         //- p.home__card__body Get a virtual card, tailored to your needs.
-        .home__card__headings
+        //- .home__card__headings
           h1.home__card__heading MasterCard
           h1.home__card__heading VISA Card
           h1.home__card__heading Verve Card
 
         .home__card__illustration
-          include partials/lock
+          //- include partials/lock
+
         .home__card__nav
           <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="74" height="74" rx="37" transform="matrix(-1 0 0 1 74 0)" fill="#F5F5F5"/>
             <path d="M35.7 42.2748C35.9 42.0748 35.996 41.8331 35.988 41.5498C35.98 41.2665 35.8757 41.0248 35.675 40.8248L32.85 37.9998H44C44.2833 37.9998 44.521 37.9038 44.713 37.7118C44.905 37.5198 45.0007 37.2825 45 36.9998C45 36.7165 44.904 36.4788 44.712 36.2868C44.52 36.0948 44.2827 35.9991 44 35.9998H32.85L35.7 33.1498C35.9 32.9498 36 32.7121 36 32.4368C36 32.1615 35.9 31.9241 35.7 31.7248C35.5 31.5248 35.2623 31.4248 34.987 31.4248C34.7117 31.4248 34.4743 31.5248 34.275 31.7248L29.7 36.2998C29.6 36.3998 29.529 36.5081 29.487 36.6248C29.445 36.7415 29.4243 36.8665 29.425 36.9998C29.425 37.1331 29.446 37.2581 29.488 37.3748C29.53 37.4915 29.6007 37.5998 29.7 37.6998L34.3 42.2998C34.4833 42.4831 34.7123 42.5748 34.987 42.5748C35.2617 42.5748 35.4993 42.4748 35.7 42.2748Z" fill="black"/>
           </svg>
-          a(href="https://payday.onelink.me/I2bz/Web" target="_blank") Download Payday
           <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="74" height="74" rx="37" fill="#F5F5F5"/>
             <path d="M38.3 42.2748C38.1 42.0748 38.004 41.8331 38.012 41.5498C38.02 41.2665 38.1243 41.0248 38.325 40.8248L41.15 37.9998H30C29.7167 37.9998 29.479 37.9038 29.287 37.7118C29.095 37.5198 28.9993 37.2825 29 36.9998C29 36.7165 29.096 36.4788 29.288 36.2868C29.48 36.0948 29.7173 35.9991 30 35.9998H41.15L38.3 33.1498C38.1 32.9498 38 32.7121 38 32.4368C38 32.1615 38.1 31.9241 38.3 31.7248C38.5 31.5248 38.7377 31.4248 39.013 31.4248C39.2883 31.4248 39.5257 31.5248 39.725 31.7248L44.3 36.2998C44.4 36.3998 44.471 36.5081 44.513 36.6248C44.555 36.7415 44.5757 36.8665 44.575 36.9998C44.575 37.1331 44.554 37.2581 44.512 37.3748C44.47 37.4915 44.3993 37.5998 44.3 37.6998L39.7 42.2998C39.5167 42.4831 39.2877 42.5748 39.013 42.5748C38.7383 42.5748 38.5007 42.4748 38.3 42.2748Z" fill="black"/>
@@ -82,9 +86,9 @@ html(lang="en")
 
     .layer 
       .layer__mall
-        img(src="images/nike.svg", alt="")
-        img(src="images/ikea.svg", alt="")
-        img(src="images/sephora.svg", alt="")
+        img(src="images/nike.svg" alt="")
+        img(src="images/ikea.svg" alt="")
+        img(src="images/sephora.svg" alt="")
       .layer__super 
         include ./partials/super.html
 
