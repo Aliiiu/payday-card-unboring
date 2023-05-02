@@ -80,6 +80,14 @@ html(lang="en")
       figure#card   
         img(src="images/black.svg" alt="")
 
+    .layer 
+      .layer__mall
+        img(src="images/nike.svg", alt="")
+        img(src="images/ikea.svg", alt="")
+        img(src="images/sephora.svg", alt="")
+      .layer__super 
+        include ./partials/super.html
+
     script.
       window.preloadables = !{JSON.stringify(preloadables).replace(/<\//g, "<\\/")}
     script(src="main.js") 
