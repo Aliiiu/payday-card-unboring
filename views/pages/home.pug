@@ -59,6 +59,7 @@ block content
         include ../partials/store
       figure.home__footer__mockup
         img(src="images/mockup.png" alt="")
+        .home__footer__time #{`${new Date().toLocaleString("en-US", {hour: "numeric", minute: "numeric", hour12: false})}`}
         .home__footer__cards
           .home__footer__card
           .home__footer__card
@@ -66,6 +67,7 @@ block content
         h3.home__footer__text Made w ❤️ for PayDay.
         p.home__footer__body (c) 2023 AJ X Goody. All Rights Reserved, all Wrongs Reversed.
         a.home__footer__text(href=tweetHref target='_blank' rel='noreferrer noopener') Share on Twitter
+          .home__footer__line
         h3.home__footer__text &nearr;
 
   .home__navigation
