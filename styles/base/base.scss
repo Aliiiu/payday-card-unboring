@@ -1,3 +1,8 @@
+:root {
+  --cardColor: #000000;
+  --navColor: #F79E1B;
+}
+
 html {
   // overflow: hidden;
   font-size: calc(100vw / 1512 * 10);
@@ -14,12 +19,18 @@ body {
   user-select: none;
   -webkit-user-drag: none;
   // overflow: hidden;
-  contain: paint;
+  // contain: paint;
   background: #FFFFFF;
+
+  @include media("<phone") {
+    contain: paint;
+  }
 }
 
 * {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ::-webkit-scrollbar {
@@ -65,14 +76,25 @@ canvas {
 }
 
 section {
-  height: calc(calc(100vh + 102.8rem) / 2);
+  height: 102.8rem;
+  --height: 100rem;
 
   @include media("<phone") {
-    height: 82.5vh;
-    //height: 82.5dvh;
+    height: 84.4rem;
   }
 }
 
-svg {
-  // pointer-events: none;
+[target="_blank"] {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.variants {
+  svg {
+    opacity: 0;
+  }
+
+  svg:nth-of-type(1) {
+    opacity: 1;
+  }
 }

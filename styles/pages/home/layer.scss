@@ -1,0 +1,75 @@
+.layer {
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+}
+
+.layer__mall {
+  position: absolute;
+  height: 65.9rem;
+  width: 86rem;
+  left: 65.2rem;
+  top: 146.2rem;
+
+  @include media("<phone") {
+    display: none;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+  }
+}
+
+.layer__super {
+  position: absolute;
+  top: 272rem;
+  left: 85rem;
+  width: 50rem;
+  display: block;
+  height: 53.1rem;
+
+  @include media("<phone") {
+    top: 181.2rem;
+    left: 8.4rem;
+    width: 22.447rem;
+    height: 28.347rem;
+  }
+
+  svg {
+    width: inherit;
+    height: inherit;
+    display: block;
+  }
+}
+
+.layer__cards {
+  position: absolute;
+  top: 445.8rem;
+  width: 100vw;
+  height: 102.8rem;
+  transform: translateY(33rem);
+
+  img {
+    padding: 20rem;
+    transform: translateY(-25.6rem);
+    height: 115%;
+    position: absolute;
+    opacity: 0;
+
+    &:nth-of-type(1) {
+      z-index: 1;
+      opacity: 1;
+    }
+  }
+
+  @include media("<phone") {
+    top: 306.1rem;
+
+    img {
+      height: 87.4rem;
+      transform: unset;
+      padding: unset;
+    }
+  }
+}

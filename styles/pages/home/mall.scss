@@ -1,50 +1,42 @@
 .home__mall {
-  padding-top: calc(7vh + 7rem);
+  padding-top: calc(7rem + 7rem);
   position: relative;
 
   @include media("<phone") {
-    padding-top: calc(4.45rem + 4.45vh * 1.2);
+    padding-top: calc(4.45rem + 4.45rem);
   }
 }
 
 .home__mall__heading {
   width: 50.1rem;
   margin-left: 21.7rem;
-  // top: 1206px;
-
   font-family: 'Aeonik';
   font-style: normal;
   font-weight: 500;
   font-size: 7.05534rem;
   line-height: 98.5%;
-  /* or 69px */
-
   letter-spacing: -0.015em;
-
   color: #141414;
 
   @include media("<phone") {
     width: 28.7rem;
     font-size: 4.5rem;
     margin-left: 4.2rem;
-    margin-top: calc(17.3rem + 17.3vh * 1.2);
+    margin-top: calc(17.3rem + 17.3rem);
   }
 }
 
 .home__mall__body {
   width: 39.4rem;
   margin-left: 21.7rem;
-  margin-top: calc(1.4vh + 1.4rem);
+  margin-top: calc(1.4rem + 1.4rem);
 
   font-family: 'Aeonik';
   font-style: normal;
   font-weight: 400;
   font-size: 2.5rem;
   line-height: 98.5%;
-  /* or 25px */
-
   letter-spacing: -0.015em;
-
   color: #141414;
 
   @include media("<phone") {
@@ -57,41 +49,50 @@
 
 .home__mall__illustration {
   position: absolute;
-  top: calc(10vh + 9.4rem);
+  top: calc(9rem + 9rem);
   left: 98.421rem;
   width: 100%;
 
   @include media("<phone") {
     left: 2.25rem;
     transform: scale(0.525);
-    top: calc(4.45rem + 4.45vh * 1.2);
+    top: calc(4.45rem + 4.45rem);
   }
 }
 
 .home__mall__illustration svg {
   position: absolute;
-
   bottom: 0;
 
   &:nth-of-type(1) {
     width: 30.746rem;
     height: 55.9rem;
     top: 0;
+
+    @include media("<phone") {
+      opacity: 0;
+    }
   }
 
   &:nth-of-type(2) {
-    top: calc(0.85vh + 0.85rem);
+    top: calc(0.85rem + 0.85rem);
     left: 10.906rem;
     height: 2.3rem;
     width: 8.947rem;
+    display: none;
 
   }
 
   &:nth-of-type(3) {
     height: 9.83rem;
     width: 41.9rem;
-    top: calc(3.0615vh + 3.0615rem);
+    top: calc(3.0615rem + 3.0615rem);
     left: -5.221rem;
+    display: none;
+
+    @include media("<phone") {
+      display: unset;
+    }
   }
 
   &:nth-of-type(4) {
@@ -99,13 +100,35 @@
     width: 53.3rem;
     border-radius: 0.2rem;
     left: -11.424rem;
-    top: 53.68rem;
+    top: 55.68rem;
   }
 
   &:nth-of-type(5) {
     height: 0.1rem;
     width: 58.2rem;
-    top: 56.5rem;
+    top: 58.5rem;
     left: calc(-2.45rem - 11.424rem);
+  }
+}
+
+.home__mall__cards {
+  opacity: 0;
+
+  @include media("<phone") {
+    position: absolute;
+    top: 15.7rem;
+    left: 5.4rem;
+    transform: rotate(90deg);
+    height: 18.05rem;
+    width: 28.561rem;
+    opacity: 1;
+    z-index: -1;
+
+    svg {
+      position: absolute;
+      top: 0;
+      width: inherit;
+      height: inherit;
+    }
   }
 }

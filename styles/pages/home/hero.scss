@@ -1,6 +1,6 @@
 .home__download {
   height: 4.34rem;
-  padding-top: calc(2.1655vh + 2.1655rem);
+  padding-top: calc(2.1655rem + 2.1655rem);
   padding-right: 12.7rem;
   right: 0;
   display: flex;
@@ -16,11 +16,16 @@
   }
 }
 
+.home {
+  contain: paint;
+}
+
 .home__hero {
-  height: calc(61.1vh + 61.1rem);
+  height: calc(61.1rem + 61.1rem);
 
   @include media("<phone") {
-    height: calc(40.1rem + 40.1vh * 1.2);
+    height: 80.2rem;
+    padding-top: 6.055rem;
   }
 
   .home__download {
@@ -29,7 +34,11 @@
     padding-top: unset;
     gap: 1.6rem;
     padding-right: unset;
-    margin: calc(1.9vh + 1.9rem) 0;
+    margin: calc(1.9rem + 1.9rem) 0;
+
+    @include media("<phone") {
+      margin-top: unset;
+    }
 
     svg {
       height: 5.6rem;
@@ -47,28 +56,34 @@
 }
 
 .home__hero__nav {
-  padding-top: calc(4.048vh + 4.048rem - 1.25vh - 1.25rem);
+  padding-top: calc(4.048rem + 4.048rem - 1.25rem - 1.25rem);
   display: flex;
   margin: 0 10.9rem;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: calc(100% - 15.4rem);
+  z-index: 3;
 
-  >svg {
+  >img {
     height: 4.2rem;
     width: 16.3rem;
     display: block;
   }
 
   @include media("<phone") {
-    padding-top: calc(2.8rem + 2.8vh * 1.2);
+    padding-top: 2.6rem;
     margin-right: 3.5rem;
     margin-left: 4.2rem;
-    position: relative;
+    position: absolute;
+    top: 0;
+    width: 31.3rem;
     z-index: 2;
 
-    >svg {
-      height: 2.1425rem;
+    >img {
       width: 8.3rem;
+      height: 2.142rem;
     }
   }
 }
@@ -101,6 +116,12 @@
   }
 }
 
+.home__hero__navIcon {
+  @include media("<phone") {
+    display: none;
+  }
+}
+
 .home__hero__navText {
   font-family: 'Aeonik';
   font-style: normal;
@@ -127,67 +148,85 @@
   position: absolute;
   left: 0;
   width: 100%;
-  top: calc(1vh + 1rem);
+  top: calc(1rem + 1rem);
+
+  img {
+    object-fit: contain;
+  }
+  @include media("<phone"){
+    top: -1rem
+  }
 }
 
-.home__hero__cards svg {
+.home__hero__cards figure {
   position: absolute;
   display: block;
 
   &:nth-of-type(1) {
-    width: calc(102.425rem * 0.85);
-    height: calc(78rem * 0.835 * 0.85);
-    left: -26.1rem;
-    top: calc(10.5vh + 10.5rem);
+    width: 52.94rem;
+    height: 30.62rem;
+    top: 36.4rem;
+    left: -19.5rem;
+    transform: rotate(calc(180deg - 146.699deg));
 
     @include media("<phone") {
-      transform: rotate(185deg);
-      height: 29.6rem;
-      width: 54.6rem;
-      top: 47.25rem;
-      left: -32.5rem;
+      width: 24.834rem;
+      height: 14.805rem;
+      left: 30.1rem;
+      top: 53.6rem;
+      border-radius: 1.3rem;
+      transform: rotate(44.94deg);
+      opacity: 1 !important;
+      visibility: unset !important
     }
   }
 
   &:nth-of-type(2) {
-    top: calc(4.5vh + 4.5rem);
-    width: 99.3605rem;
-    height: 60.3605rem;
-    right: -36.965rem;
+    transform: rotate(342.2deg);
+    left: 72.5rem;
+    top: 74.4rem;
+    width: 67.94rem;
+    height: 36rem;
 
     @include media("<phone") {
-      transform: rotate(120deg);
-      width: calc(30.1rem * 1.75);
-      height: calc(16.8rem * 1.75);
-      top: -8.5rem;
-      right: -25rem;
+      width: 27.307rem;
+      height: 14.805rem;
+      left: -13.3rem;
+      top: 55.3rem;
+      border-radius: 1.34342rem;
+      transform: rotate(46.03deg);
+      opacity: 1 !important;
+      visibility: unset !important
     }
   }
 
   &:nth-of-type(3) {
-    top: calc(2.7vh + 2.7rem);
-    width: 67.635rem;
-    height: calc(72rem * 0.835);
-    left: 72.5rem;
-    top: calc(29.5vh + 29.5rem);
+    transform: rotate(40.2003deg);
+    height: 32rem;
+    width: 67.94rem;
+    top: 20.5rem;
+    left: 110.5rem;
 
     @include media("<phone") {
-      transform: rotate(244deg);
-      height: 21.42rem;
-      width: 39.045rem;
-      top: 49.55rem;
-      left: 21.1rem;
+      width: 24.834rem;
+      height: 14.05rem;
+      left: 20rem;
+      top: 6.1rem;
+      border-radius: 1.343rem;
+      transform: rotate(-17.59deg);
+      opacity: 1 !important;
+      visibility: unset !important
     }
   }
 }
 
 .home__text {
-  margin: calc(5.45vh + 5.45rem) auto 0;
+  margin: calc(5.45rem + 5.45rem + 7.4rem) auto 0;
   display: grid;
   justify-content: center;
 
   @include media("<phone") {
-    margin-top: calc(9.5rem + 9.5vh * 1.2);
+    margin-top: 19rem;
   }
 }
 
@@ -240,7 +279,10 @@
   margin: 0.9rem auto;
 
   @include media("<phone") {
-    display: none;
+    width: 19.4rem;
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+
   }
 }
 

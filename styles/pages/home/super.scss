@@ -1,5 +1,5 @@
 .home__super {
-  padding-top: calc(10vh + 10rem);
+  padding-top: calc(10rem + 10rem);
   position: relative;
 
   @include media("<phone") {
@@ -10,41 +10,32 @@
 .home__super__heading {
   width: 50.1rem;
   margin-left: 21.7rem;
-  // top: 1206px;
-
   font-family: 'Aeonik';
   font-style: normal;
   font-weight: 500;
   font-size: 7.05534rem;
   line-height: 98.5%;
-  /* or 69px */
-
   letter-spacing: -0.015em;
-
   color: #141414;
 
   @include media("<phone") {
     width: 26.7rem;
     font-size: 4.5rem;
     margin-left: 4.2rem;
-    margin-top: calc(17.3rem + 17.3vh * 1.2 + 5.6rem);
+    margin-top: calc(17.3rem + 17.3rem + 5.6rem);
   }
 }
 
 .home__super__body {
   width: 39.4rem;
   margin-left: 21.7rem;
-  margin-top: calc(1.4vh + 1.4rem);
-
+  margin-top: calc(1.4rem + 1.4rem);
   font-family: 'Aeonik';
   font-style: normal;
   font-weight: 400;
   font-size: 2.5rem;
   line-height: 98.5%;
-  /* or 25px */
-
   letter-spacing: -0.015em;
-
   color: #141414;
 
   @include media("<phone") {
@@ -57,7 +48,7 @@
 
 .home__super__illustration {
   position: absolute;
-  top: calc(6.2vh + 6.2rem);
+  top: 22.7rem;
   left: 88.7rem;
   height: 59rem;
   width: 42.257rem;
@@ -71,10 +62,7 @@
 
 .home__super__illustration svg {
   position: absolute;
-
   bottom: 0;
-
-
 
   &:nth-of-type(1) {
     height: 59rem;
@@ -90,6 +78,7 @@
     width: 5rem;
     left: -0.9rem;
     top: 5.231rem;
+    transform: scale(1.225);
   }
 
   &:nth-of-type(3) {
@@ -97,6 +86,8 @@
     width: 10.7rem;
     left: 2.4rem;
     top: calc(-2.308rem - 3.29rem);
+    transform: scale(1.225);
+
   }
 
   &:nth-of-type(4) {
@@ -104,6 +95,7 @@
     width: 5rem;
     left: 18.6rem;
     top: -12.55rem;
+    transform: scale(1.225);
   }
 
   &:nth-of-type(5) {
@@ -111,6 +103,7 @@
     width: 7.2rem;
     right: 2.357rem;
     top: calc(-2.308rem - 3.29rem);
+    transform: scale(1.225);
   }
 
 
@@ -119,5 +112,53 @@
     width: 5rem;
     right: -0.843rem;
     top: 5.231rem;
+    transform: scale(1.225);
+  }
+}
+
+#card-black-3 {
+  @include media ("<phone") {
+    opacity: 0;
+  }
+}
+
+
+.home__super__cards {
+  opacity: 0;
+
+  @include media("<phone") {
+    position: absolute;
+    top: 17.2rem;
+    left: 10.1rem;
+    transform: rotate(90deg);
+    width: 18.747rem;
+    height: 12.347rem;
+    opacity: 1;
+    z-index: 1;
+
+    svg {
+      position: absolute;
+      top: 0;
+      width: inherit;
+      height: inherit;
+    }
+  }
+}
+
+.red-fix {
+  fill: #bd1b1e;
+}
+
+.home__super__bg {
+  opacity: 0;
+
+  @include media("<phone") {
+    position: absolute;
+    width: 14.846rem;
+    height: 23.315rem;
+    left: 11.564rem;
+    top: 17.5rem;
+    z-index: -1;
+    opacity: 1;
   }
 }

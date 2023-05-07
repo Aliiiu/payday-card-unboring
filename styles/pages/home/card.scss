@@ -1,48 +1,86 @@
 .home__card {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 440.1rem;
+  contain: paint;
+  transform: translateY(33rem);
+
   section {
-    padding-top: calc(5.65vh + 5.65rem);
-    position: absolute;
     width: 100%;
+    height: 103.1rem;
   }
 
-  .home__download {
-    justify-content: center;
-    left: 0;
-    padding: unset;
-    gap: 3rem;
-    bottom: calc(5.5vh + 5.5rem);
+  @include media("<phone") {
+    top: 329.1rem;
+    transform: translateY(10rem);
+    height: 87.4rem;
+
+    section {
+      height: 87.4rem;
+    }
+  }
+}
+
+.home__card__variants {
+  position: relative;
+  background: #141414;
+  contain: paint;
+
+  img {
     position: absolute;
+    top: 0;
+    filter: blur(var(--blur));
+    padding: 20rem;
+    object-fit: cover;
+    transform: translateY(-20rem);
+    height: 115%;
+
+    &:nth-of-type(1) {
+      z-index: 1;
+    }
+  }
+
+  @include media("<phone") {
+    img {
+      padding: unset;
+      background-image: url(../public/images/master__back__m.png) !important;
+      height: 100%;
+      transform: unset;
+    }
   }
 }
-
-.home__card__master {
-  background: #090909;
-  color: #ffffff;
-}
-
-.home__card__goody {
-  background: #B182E0;
-  color: #ffffff;
-}
-
-.home__card__aj {
-  background: #E8E8E8;
-  color: #000000;
-}
-
 
 .home__card__body {
   font-family: 'Aeonik';
   font-style: normal;
   font-weight: 400;
-  font-size: 3.5rem;
+  font-size: 3rem;
   line-height: 98.5%;
-  /* or 34px */
-
   letter-spacing: -0.015em;
+  padding-top: 8.4rem;
+  z-index: 4;
+  position: relative;
+  color: #FFFFFF;
+  width: 23.7rem;
+  margin-left: 10.9rem;
 
-  color: inherit;
-  text-align: center;
+  @include media("<phone") {
+    margin-left: 4.7rem;
+    padding-top: 8.9rem;
+    font-size: 1.9rem;
+    width: 12.2rem;
+  }
+}
+
+.home__card__headings {
+  display: flex;
+  width: 300vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  align-items: center;
+  height: 100vh;
 }
 
 .home__card__heading {
@@ -51,20 +89,18 @@
   font-weight: 500;
   font-size: 22.9428rem;
   line-height: 98.5%;
-  /* identical to box height, or 226px */
-
   text-align: center;
   letter-spacing: -0.015em;
-
   color: #FFFFFF;
-  margin-top: calc(10.55vh + 10.55rem);
+  width: 100vw;
   position: relative;
   z-index: 2;
 }
 
 .home__card__illustration {
+  opacity: 0.0;
   position: absolute;
-  top: calc(9.7vh + 9.7rem);
+  top: calc(9.7rem + 9.7rem);
   left: 56.3rem;
   height: 59rem;
   width: 42.257rem;
@@ -72,10 +108,53 @@
 
 .home__card__illustration svg {
   position: absolute;
-
   bottom: 0;
-
   height: 59rem;
   width: 42.257rem;
   border-radius: 2.928rem
+}
+
+.home__card__nav {
+  display: flex;
+  gap: 120.5rem;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 34.5rem;
+
+  svg {
+    width: 7.4rem;
+    height: 7.4rem;
+    display: block;
+    cursor: pointer;
+  }
+
+  @include media("<phone") {
+    gap: 3.811rem;
+    bottom: 10.015rem;
+    top: 70.4rem;
+
+    svg {
+      border-radius: 73.6232px;
+    }
+
+    rect {
+      fill: var(--navColor);
+      stroke: white;
+      stroke-width: 0.15rem;
+    }
+
+    path {
+      fill: white
+    }
+  }
+}
+
+.marker4 {
+  margin-top: 102rem;
+
+  @include media("<phone") {
+    display: none;
+  }
 }

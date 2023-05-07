@@ -9,7 +9,6 @@ block variables
 
 block content 
   main.home#smooth-content
-    .home__wrappe
     section.home__hero
       .home__hero__wrapper
         .home__hero__cards
@@ -34,19 +33,34 @@ block content
       p.home__mall__body Shop at any store across the world, from the comfort of your own couch. No more limits or boundaries, just pure shopping bliss.
       .home__mall__illustration
         include ../partials/mall
+      .home__mall__cards.variants
+        include ../partials/unlockedCard.html
 
     section.home__super 
       h2.home__super__heading(data-feature) One super-card for every need.
       p.home__super__body Pay for all your favorite services, from Netflix to Spotify to Slack, and everything in between. We’ve got you covered.
       .home__super__illustration
         include ../partials/super
+      .home__super__cards.variants
+        include ../partials/unlockedCard.html
+      figure.home__super__bg
+        img(src="images/cape-bg.png", alt="")
 
     section.home__lock 
       h2.home__lock__heading(data-feature) Your cards, your rules.
       p.home__lock__body Our Card Lock feature lets you lock and disable your cards whenever they're not being used, giving you the power to decide when and how your cards are active. 
       button.home__lock__button Lock Card
       .home__lock__illustration
-        include ../partials/lock
+        .home__lock__cards
+          include ../partials/unlockedCard.html
+          img(src="images/pad-1.png", alt="" class="pad-1" id="pad-1")
+          img(src="images/pad-2.png", alt="" class="pad-2" id="pad-2")
+          img(src="images/pad-3.png", alt="" class="pad-3" id="pad-3")
+        .home__locked__cards
+          include ../partials/lockedCard.html
+          img(src="images/padl-1.png", alt="" class="pad-1" id="padl-1")
+          img(src="images/padl-2.png", alt="" class="pad-2" id="padl-2")
+          img(src="images/padl-3.png", alt="" class="pad-3" id="padl-3")
 
  
 
@@ -63,6 +77,8 @@ block content
         .home__footer__cards
           .home__footer__card
           .home__footer__card
+        .home__footer__mainCard.variants
+          include ../partials/unlockedCard.html
       .home__footer__foot 
         h3.home__footer__text Made w ❤️ for PayDay.
         p.home__footer__body (c) 2023 AJ X Goody. All Rights Reserved, all Wrongs Reversed.
