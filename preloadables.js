@@ -31,6 +31,21 @@ preloadables.images = [
   "images/visa__front.png",
   "images/visa__front__m.png",
   "images/black.svg",
+  "images/mall/nike-logo.png",
+  "images/mall/nike-up.png",
+  "images/mall/nike-left.png",
+  "images/mall/nike-right.png",
+  "images/mall/nike-down.png",
+  "images/mall/ikea-logo.png",
+  "images/mall/ikea-up.png",
+  "images/mall/ikea-left.png",
+  "images/mall/ikea-right.png",
+  "images/mall/ikea-down.png",
+  "images/mall/sephora-logo.png",
+  "images/mall/sephora-up.png",
+  "images/mall/sephora-left.png",
+  "images/mall/sephora-right.png",
+  "images/mall/sephora-down.png",
 ]
 preloadables.videos = []
 preloadables.textures = {}

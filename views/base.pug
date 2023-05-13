@@ -65,8 +65,8 @@ html(lang="en")
         .home__hero__navOptions
           include ./partials/store.html
           .home__hero__navLinks
-            a(href="https://apps.apple.com/ng/app/payday-global-money-tansfer/id1573895439" target="_blank") On the App Store
-            a(href="https://play.google.com/store/apps/details?id=com.usepayday.app" target="_blank") On the Playstore
+            a(href="https://apps.apple.com/ng/app/payday-global-money-tansfer/id1573895439" target="_blank")  App Store
+            a(href="https://play.google.com/store/apps/details?id=com.usepayday.app" target="_blank")  Playstore
 
     .home__card
       section.home__card__variants 
@@ -94,7 +94,12 @@ html(lang="en")
 
     .layer 
       .layer__mall
-        img(src="images/nike.svg" alt="")
+        img(src="images/mall/nike-logo.png" alt="" data-shop="nike")
+        img(src="images/mall/nike-up.png" alt="")
+        img(src="images/mall/nike-right.png" alt="")
+        img(src="images/mall/nike-down.png" alt="")
+        img(src="images/mall/nike-left.png" alt="")
+        include ./partials/roof.svg
 
       .layer__super 
         include ./partials/super.html
