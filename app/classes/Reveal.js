@@ -1,39 +1,36 @@
-import Component from "classes/Component";
-import gsap from "gsap";
+import Component from "classes/Component"
+import gsap from "gsap/dist/gsap"
 
 export default class Reveal extends Component {
   constructor(params) {
-    super(params);
-    this.threshold = params.threshold || 0.75;
-    this.unobserve = params.unobserve ?? true;
-    this.createObserver();
+    super(params)
+    this.threshold = params.threshold || 0.75
+    this.unobserve = params.unobserve ?? true
+    this.createObserver()
   }
 
   createObserver() {
-    const options = { threshold: this.threshold };
+    const options = { threshold: this.threshold }
 
     this.observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          this[entry.getAttribute("data-reveal")](entry.target);
-          if (this.unobserve) this.observer.unobserve(entry.target);
-          this.observer.unobserve(entry.target);
+          this[entry.getAttribute("data-reveal")](entry.target)
+          if (this.unobserve) this.observer.unobserve(entry.target)
+          this.observer.unobserve(entry.target)
         } else {
-          this[entry.getAttribute("data-reveal") + "Reverse"]?.call(
-            this,
-            entry.target
-          );
+          this[entry.getAttribute("data-reveal") + "Reverse"]?.call(this, entry.target)
         }
-      });
-    }, options);
+      })
+    }, options)
 
     Object.entries(this.elements).forEach(([key, value]) => {
       if (value.forEach) {
         value.forEach((element) => {
-          this.observer.observe(element);
-        });
-      } else this.observer.observe(value);
-    });
+          this.observer.observe(element)
+        })
+      } else this.observer.observe(value)
+    })
   }
 
   curtain(element) {
@@ -51,6 +48,6 @@ export default class Reveal extends Component {
         delay: element.getAttribute("data-delay"),
         duration: 0.5,
       }
-    );
+    )
   }
 }

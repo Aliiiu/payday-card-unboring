@@ -1,4 +1,4 @@
-import gsap from "gsap"
+import gsap from "gsap/dist/gsap"
 import Component from "classes/Component"
 import animation from "animations/@shareHover"
 
@@ -8,7 +8,7 @@ export default class Footer extends Component {
       element: ".home__footer",
       elements: {
         clock: ".home__footer__time",
-        shareLink: "a.home__footer__text"
+        shareLink: "a.home__footer__text",
       },
     })
     this.animate = true
@@ -24,7 +24,7 @@ export default class Footer extends Component {
     })
   }
 
-  addEventListeners(){
+  addEventListeners() {
     this.elements.shareLink.onmouseenter = () => this.animation.play()
     this.elements.shareLink.onmouseleave = () => this.animation.reverse()
   }

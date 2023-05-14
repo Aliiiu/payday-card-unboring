@@ -29,12 +29,16 @@
   }
 
   @include media("<phone") {
-    top: 368.5rem !important;
-    width: 20.275rem !important;
-    height: 12.173rem !important;
-    left: 8.219rem !important;
+    top: 369.5rem !important;
+    width: 19.775rem !important;
+    height: 11.673rem !important;
+    left: 9.219rem !important;
     background: #0D0D0D !important;
     border-radius: 9.82235px !important;
     transform: rotate(55deg) !important;
+
+    .card__lock svg {
+      opacity: 0 !important;
+    }
   }
 }

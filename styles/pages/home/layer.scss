@@ -2,6 +2,13 @@
   position: absolute;
   top: 0;
   pointer-events: none;
+  --topB: #D82D35;
+  --topW: #FBEEE5;
+  --bottomW: #DCCABE;
+
+  @include media("<phone") {
+    z-index: 3;
+  }
 }
 
 .layer__mall {
@@ -18,6 +25,64 @@
   img {
     position: absolute;
     top: 0;
+    opacity: 0;
+
+    &:nth-of-type(1) {
+      width: 30.5rem;
+      height: 2.9rem;
+      left: 33.4rem;
+      top: 14.7rem;
+      opacity: 1;
+
+      &[data-shop=ikea] {
+        height: 3.7rem
+      }
+
+      &[data-shop=sephora] {
+        height: 1.5rem;
+        top: 15.4rem;
+      }
+    }
+
+    &:nth-of-type(2) {
+      width: 13.581rem;
+      height: 13.581rem;
+      left: 23.1rem;
+      top: 3.7rem;
+      opacity: 1;
+    }
+
+    &:nth-of-type(3) {
+      width: 13.581rem;
+      height: 13.581rem;
+      left: 59.8rem;
+      top: 33.2rem;
+      opacity: 1;
+    }
+
+    &:nth-of-type(4) {
+      width: 13.581rem;
+      height: 13.581rem;
+      left: 26rem;
+      top: 40.8rem;
+      opacity: 1;
+    }
+
+    &:nth-of-type(5) {
+      width: 13.581rem;
+      height: 13.581rem;
+      left: 10.6rem;
+      top: 28.2rem;
+      opacity: 1;
+    }
+  }
+
+  svg {
+    width: 41.9rem;
+    height: 9.83rem;
+    left: 28rem;
+    top: 18.323rem;
+    position: absolute;
   }
 }
 

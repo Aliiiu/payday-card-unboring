@@ -4,7 +4,7 @@ import Component from "classes/Component"
 
 export default class DropDown extends Component {
   constructor() {
-    super({ element: ".home__hero__navDrop" })
+    super({ element: ".home__hero__navText" })
     this.create()
   }
 

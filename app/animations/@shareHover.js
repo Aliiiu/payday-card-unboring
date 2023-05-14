@@ -1,4 +1,4 @@
-import gsap from "gsap"
+import gsap from "gsap/dist/gsap"
 
 export default function shareHover() {
   const tl = gsap.timeline({ paused: true })

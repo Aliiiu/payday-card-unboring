@@ -68,9 +68,13 @@
     width: 30.746rem;
     height: 55.9rem;
     top: 0;
+    opacity: 0;
+    transform: scaleY(0.75);
+    transform-origin: 50% 100%;
 
     @include media("<phone") {
       opacity: 0;
+      transform: unset;
     }
   }
 

@@ -1,5 +1,4 @@
 import Page from "classes/Page";
-import NormalizeWheel from "normalize-wheel";
 import Prefix from "prefix";
 import { clamp, lerp } from "utils/math";
 import Reveal from "classes/Reveal";
@@ -14,15 +13,10 @@ export default class LongPage extends Page {
     super.create();
     this.reCalculate({ scroll: {} });
     this.transformPrefix = Prefix("transform");
-    // this.Revealer = new Reveal({
-    //   elements: {},
-    // });
   }
   update() {
-    // this.scroll && this.smoothScroll();
   }
   destroy() {
-    // this.Revealer.observer.disconnect();
   }
 
   reCalculate() {
@@ -31,14 +25,11 @@ export default class LongPage extends Page {
       current: 0,
       target: 0,
       last: { y: 0, clientY: 0 },
-      // limit: this.elements.wrapper.clientHeight - window.innerHeight,
     };
   }
 
   onMousewheel(event) {
-    const { pixelY } = NormalizeWheel(event);
-    const pixel = clamp(0, this.scroll.target + pixelY, this.scroll.limit);
-    this.scroll.target = pixel < 0 ? 0 : pixel;
+
   }
 
   onTouchDown(event) {
