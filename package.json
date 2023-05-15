@@ -16,7 +16,7 @@
     "compression": "^1.7.4",
     "concurrently": "^7.4.0",
     "express": "^4.18.1",
-    "gsap": "file:gsap-bonus.tgz",
+    "gsap": "^3.11.5",
     "pug": "^3.0.2",
     "split-type": "^0.3.3",
     "three": "^0.145.0"
